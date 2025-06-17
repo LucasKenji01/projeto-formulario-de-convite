@@ -4,14 +4,18 @@
   height: 100vh;
   overflow: hidden;
   gap: 1.25rem;
+  padding-inline: 1.25rem;
+  background-color: var(--shape-background);
 }
 
 aside {
-  margin: 1.25rem 0 1.25rem 1.25rem;
+  margin-block: 1.25rem;
   background-image: url(../assets/Background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
+  aspect-ratio: auto;
   border-radius: 0.75rem;
   padding: 2rem;
 }
@@ -31,4 +35,20 @@ aside p {
   margin-top: .25rem;
   font: 300 1rem var(--font-family-open-sans);
   color: var(--text-heading);
+}
+
+main {
+  margin-block: 1.25rem;
+  overflow: auto;
+  border-radius: 0.75rem;
+  margin-right: 1.25rem;
+  background-color: var(--shape-body);
+  padding-inline: 8.125rem;
+
+  & h2 {
+    max-width: 35rem;
+    font: var(--heading-md);
+    color: var(--text-heading);
+    margin-top: 5rem;
+  }
 }

@@ -1,0 +1,36 @@
+label {
+  font: var(--body-sm-reg);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: .75rem;
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  height: 3rem;
+  padding: 0.8125rem 1rem;
+  background-color: var(--input-base);
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  font: var(--body-md-reg);
+  color: var(--input-placeholder);
+}
+
+.container-fields {
+  margin-top: 1.5rem;
+  display: grid;
+}
+
+textarea {
+  appearance: none;
+  width: 100%;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  padding: 1rem;
+  font: var(--body-md-reg);
+  color: var(--input-placeholder);
+  background-color: var(--input-base);
+  border-radius: .5rem;
+}
