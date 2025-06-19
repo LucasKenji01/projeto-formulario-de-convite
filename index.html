@@ -22,7 +22,7 @@
     <main>
       <h2>Crie seu convite</h2>
       <form>
-        <fieldset class="about-event">
+        <fieldset id="about-event">
           <div class="container-legend">
             <img src="assets/icons/calendar.svg" alt="ícone de calendário">
             <legend>Sobre o evento</legend>
@@ -84,7 +84,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="customization">
+        <fieldset id="customization">
           <div class="container-legend">
             <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
             <legend>Personalização</legend>
@@ -285,6 +285,30 @@
             </section>
           </div>
 
+        </fieldset>
+
+        <fieldset id="contact">
+          <div class="container-legend">
+            <img src="assets/icons/contact.svg" alt="ícone de contato">
+            <legend>Dados para contato</legend>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="fullname">Nome</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nome completo" required>
+          </div>
+
+          <div class="email-and-phone flex">
+            <div class="input-wrapper flex-1">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="input-wrapper flex-1">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+            </div>
+          </div>
         </fieldset>
         <!-- <button type="submit">Enviar</button> -->
       </form>

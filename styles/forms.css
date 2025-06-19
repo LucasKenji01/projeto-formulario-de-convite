@@ -39,7 +39,7 @@ legend {
   gap: 1rem;
 }
 
-.customization {
+#customization {
   margin-top: 3.125rem;
 }
 
@@ -64,3 +64,17 @@ label[for="event-theme"] {
 #cover-photo {
   max-width: 23rem;
 }
+
+#contact {
+  margin-top: 3rem;
+}
+
+.email-and-phone {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+#contact > .input-wrapper {
+  margin-top: 1.5rem;
+}
+
