@@ -142,3 +142,52 @@ input[name="cyan"] {
 .theme-card:has(:checked) {
   outline: 2px solid var(--brand-light);
 }
+
+.checkbox-line {
+  display: flex;
+  gap: .75rem;
+  position: relative;
+  margin-inline: 0;
+}
+
+.checkbox-line input {
+  appearance: none;
+  position: absolute;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 0;
+  top: 1px;
+  left: 1px;
+}
+
+.checkbox-line:has(:checked) {
+  & div > img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.checkbox-default {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--brand-light);
+  border-radius: .25rem;
+  padding: 0.125rem;
+}
+
+.checkbox-default > img {
+  display: none;
+}
+
+.ghost-check {
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox-line span > a {
+  font: var(--body-sm-semi);
+  color: var(--brand-light);
+}
+

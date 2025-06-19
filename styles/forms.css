@@ -2,7 +2,6 @@
 
 form {
   margin-top: 2.5rem;
-  height: 200rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -78,3 +77,39 @@ label[for="event-theme"] {
   margin-top: 1.5rem;
 }
 
+#footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--input-stroke);
+}
+
+.container-checkboxes {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap:.25rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 3rem;
+  width: 11.0625rem;
+  height: 3rem;
+  background-color: var(--brand-dark);
+  border: none;
+  border-radius: .5rem;
+  align-self: flex-end;
+  margin-bottom: 5rem;
+}
+
+button > p {
+  font: var(--body-md-semi);
+  color: var(--text-heading);
+}
+
+button > img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
