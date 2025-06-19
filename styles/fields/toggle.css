@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.container-toggle:hover {
+  cursor: pointer;
+
+  & input {
+    cursor: pointer;
+  }
+}
+
 .container-toggle:has(:checked) {
   & > div {
     background-color: var(--brand-light);

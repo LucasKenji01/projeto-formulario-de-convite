@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.droparea-wrapper > label:hover {
+  cursor: pointer;
+}
+
 .droparea-wrapper label > div {
   width: 7.4375rem;
   height: 2.5rem;
@@ -31,10 +35,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.error {
-  display: none;
 }
 
 

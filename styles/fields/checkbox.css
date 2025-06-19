@@ -12,6 +12,20 @@
   position: relative;
 }
 
+#colors label:hover {
+  cursor: pointer;
+
+  & input {
+    cursor: pointer;
+  }
+}
+
+#colors label:hover {
+  & .background-circle {
+    background-color: var(--shape-hover);
+  }
+}
+
 label {
   margin-right: 0.75rem;
 }
@@ -25,6 +39,8 @@ label {
   z-index: 1;
   top: 0;
 }
+
+
 
 input[type="checkbox"] {
   appearance: none;
@@ -139,6 +155,15 @@ input[name="cyan"] {
   }
 }
 
+.theme-card:hover {
+  background-color: var(--shape-hover);
+  cursor: pointer;
+
+  & input {
+    cursor: pointer;
+  }
+}
+
 .theme-card:has(:checked) {
   outline: 2px solid var(--brand-light);
 }
@@ -148,6 +173,14 @@ input[name="cyan"] {
   gap: .75rem;
   position: relative;
   margin-inline: 0;
+}
+
+.checkbox-line:hover {
+  cursor: pointer;
+
+  & input {
+    cursor: pointer;
+  }
 }
 
 .checkbox-line input {

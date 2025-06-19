@@ -32,17 +32,29 @@
             <div class="input-wrapper">
               <label for="event-name">Título</label>
               <input type="text" id="event-name" name="event-name" placeholder="Nome do evento">
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="ícone de alerta com círculo em volta">
+                <p>Error message</p>
+              </div>
             </div>
 
             <div class="flex">
               <div class="input-wrapper flex-1">
                 <label for="start">Início</label>
-                <input type="date" id="start" name="start" lang="pt-BR">
+                <input type="date" id="start" name="start" lang="pt-BR" required>
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="ícone de alerta com círculo em volta">
+                  <p>Error message</p>
+                </div>
               </div>
 
               <div class="input-wrapper flex-1">
                 <label for="end">Fim</label>
-                <input type="date" id="end" name="end" lang="pt-BR">
+                <input type="date" id="end" name="end" lang="pt-BR" required>
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="ícone de alerta com círculo em volta">
+                  <p>Error message</p>
+                </div>
               </div>
             </div>
 
@@ -73,13 +85,13 @@
 
               <div class="input-wrapper flex-1">
                 <label for="local">Local</label>
-                <input type="text" id="local" name="local" placeholder="Local ou endereço">
+                <input type="text" id="local" name="local" placeholder="Local ou endereço" required>
               </div>
             </div>
 
             <div class="textarea-wrapper">
               <label for="description">Descrição</label>
-              <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento" required></textarea>
             </div>
           </div>
         </fieldset>
@@ -296,17 +308,21 @@
           <div class="input-wrapper">
             <label for="fullname">Nome</label>
             <input type="text" id="fullname" name="fullname" placeholder="Nome completo" required>
+            <div class="error">
+              <img src="assets/icons/circle-alert.svg" alt="ícone de alerta com círculo em volta">
+              <p>Campo obrigatório</p>
+            </div>
           </div>
 
           <div class="email-and-phone flex">
             <div class="input-wrapper flex-1">
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+              <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
             </div>
 
             <div class="input-wrapper flex-1">
               <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+              <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
             </div>
           </div>
         </fieldset>
@@ -314,14 +330,14 @@
         <fieldset id="footer">
           <div class="container-checkboxes">
             <label class="checkbox-line" for="terms">
-              <input type="checkbox" id="terms" name="terms">
+              <input type="checkbox" id="terms" name="terms" required>
               <div class="checkbox-default">
                 <img src="assets/icons/check.svg" alt="ícone de check">
                 <div class="ghost-check"></div>
               </div>
               <span for="terms">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></span>
             </label>
-            
+
             <label class="checkbox-line" for="update-email">
               <input type="checkbox" id="update-email" name="update-email">
               <div class="checkbox-default">
@@ -330,7 +346,7 @@
               </div>
               <span for="update-email">Aceito receber atualizações e promoções por e-mail</span>
             </label>
-            
+
             <label class="checkbox-line" for="update-sms">
               <input type="checkbox" id="update-sms" name="update-sms">
               <div class="checkbox-default">

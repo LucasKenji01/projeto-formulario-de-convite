@@ -98,6 +98,22 @@
   }
 }
 
+#presencial:has(:not(:checked)):hover {
+  cursor: pointer;
+
+  & input#in-person {
+    cursor: pointer;
+  }
+}
+
+#online:has(:not(:checked)):hover {
+  cursor: pointer;
+
+  & input#remoto {
+    cursor: pointer;
+  }
+}
+
 @keyframes slide-right {
   from {
     transform: translate(-100%);
@@ -128,6 +144,7 @@
   & div {
     display: none;
   }
+
 
 }
 

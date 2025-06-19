@@ -18,6 +18,27 @@ input[type="text"], input[type="date"], input[type="email"], input[type="tel"] {
   color: var(--input-placeholder);
 }
 
+.input-wrapper {
+  position: relative;
+}
+
+input[type="text"]:invalid + div {
+  display: flex;
+  gap: .5rem;
+  position: absolute;
+  top: 85px;
+
+  & img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  & p {
+    font: var(--body-xs-reg);
+    color: var(--danger);
+  }
+}
+
 textarea {
   appearance: none;
   width: 100%;
