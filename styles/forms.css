@@ -2,6 +2,10 @@
 
 form {
   margin-top: 2.5rem;
+  height: 200rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 fieldset {
@@ -26,10 +30,37 @@ legend {
 }
 
 .container-fields {
+  margin-top: 1.5rem;
   display: grid;
   gap: 1rem;
 }
 
 .container-fields .flex {
   gap: 1rem;
+}
+
+.customization {
+  margin-top: 3.125rem;
+}
+
+label[for="main-color"] {
+  margin: 1.5rem 0 1rem 0;
+}
+
+label[for="event-theme"] {
+  margin: 1.75rem 0 1rem 0;
+}
+
+.style-and-photo {
+  margin-top: 1.75rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#style {
+  max-width: 11rem;
+}
+
+#cover-photo {
+  max-width: 23rem;
 }

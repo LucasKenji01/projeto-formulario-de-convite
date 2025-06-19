@@ -1,0 +1,64 @@
+.droparea-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  position: relative;
+}
+
+.droparea-wrapper > label {
+  margin: 0;
+}
+
+.droparea-wrapper label > div {
+  width: 7.4375rem;
+  height: 2.5rem;
+  display: flex;
+  gap:.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+}
+
+.droparea-wrapper label div > img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.droparea-wrapper > input {
+  font: var(--body-md-reg);
+  color: var(--input-placeholder);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error {
+  display: none;
+}
+
+
+.droparea-wrapper > input:invalid + div {
+  display: flex;
+  gap: .5rem;
+  position: absolute;
+  top: 48px;
+
+  & img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  & p {
+    font: var(--body-xs-reg);
+    color: var(--danger);
+  }
+}
+
+.droparea-wrapper > input::file-selector-button {
+  display: none;
+}
+
+.droparea-wrapper > input::-webkit-file-upload-button {
+  visibility: hidden;
+}

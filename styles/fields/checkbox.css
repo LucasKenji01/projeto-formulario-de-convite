@@ -1,0 +1,144 @@
+#colors {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+#colors label > span {
+  display: none;
+}
+
+#colors label {
+  position: relative;
+}
+
+label {
+  margin-right: 0.75rem;
+}
+
+.background-circle {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--shape-button);
+  z-index: 1;
+  top: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  top: 0.375rem;
+  left: 0.375rem;
+}
+
+input[name="brand-light"] {
+  background-color: var(--brand-light);
+}
+
+input[name="navy"] {
+  background-color: var(--navy);
+}
+
+input[name="purple"] {
+  background-color: var(--purple);
+}
+
+input[name="fuschia"] {
+  background-color: var(--fuschia);
+}
+
+input[name="pink"] {
+  background-color: var(--pink);
+}
+
+input[name="red"] {
+  background-color: var(--danger);
+}
+
+input[name="orange"] {
+  background-color: var(--orange);
+}
+
+input[name="yellow"] {
+  background-color: var(--yellow);
+}
+
+input[name="lime"] {
+  background-color: var(--lime);
+}
+
+input[name="green"] {
+  background-color: var(--green);
+}
+
+input[name="cyan"] {
+  background-color: var(--cyan);
+}
+
+#brand-light:has(:checked),
+#navy:has(:checked),
+#purple:has(:checked),
+#fuschia:has(:checked),
+#pink:has(:checked),
+#red:has(:checked),
+#orange:has(:checked),
+#yellow:has(:checked),
+#lime:has(:checked),
+#green:has(:checked),
+#cyan:has(:checked) {
+  & .background-circle {
+    border: 2px solid var(--brand-light);
+  }
+}
+
+#theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+  gap: .5rem;
+}
+
+.theme-card {
+  width: 8.375rem;
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  overflow: hidden;
+  padding: .25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: relative;
+  z-index: 1;
+
+  & > input {
+    appearance: none;
+    width: 7.7rem;
+    height: 5.6rem;
+    border-radius: .3rem;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
+  }
+
+  & > img {
+    border-radius: .25rem;
+  }
+
+  & > span {
+    text-align: center;
+    font: var(--body-sm-reg);
+    color: var(--text-heading);
+  }
+}
+
+.theme-card:has(:checked) {
+  outline: 2px solid var(--brand-light);
+}
